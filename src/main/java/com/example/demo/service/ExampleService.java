@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 @ExampleAnnotation
 public class ExampleService {
 
+  @ExampleAnnotation
   public String hello() {
     String output = "Hello";
     if (this instanceof ExampleInterface) {

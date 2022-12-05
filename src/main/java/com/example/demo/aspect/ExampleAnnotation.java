@@ -8,6 +8,6 @@ import java.lang.annotation.Target;
 /**
  * @author Luis Alves
  */
-@Target(ElementType.TYPE)
+@Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ExampleAnnotation {}
