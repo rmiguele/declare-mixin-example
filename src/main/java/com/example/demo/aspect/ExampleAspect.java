@@ -23,7 +23,7 @@ public class ExampleAspect {
   }
 
   @Around("@annotation(com.example.demo.aspect.ExampleAnnotation)")
-  public Object debugAssembler(ProceedingJoinPoint joinPoint) throws Throwable {
+  public Object logAroundBehavior(ProceedingJoinPoint joinPoint) throws Throwable {
     Object proceed = joinPoint.proceed();
 
     log.info("@Around is working!");
