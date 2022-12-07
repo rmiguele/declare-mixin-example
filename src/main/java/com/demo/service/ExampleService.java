@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ExampleService {
 
-    @ContextProducer("helloWorld")
+    @ContextProducer("hello")
     public String hello() {
         return "Hello";
     }
